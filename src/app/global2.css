@@ -1,0 +1,89 @@
+@import "~bootstrap/dist/css/bootstrap.min.css"
+ 
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav_container {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+p {
+  width:500px
+
+}
+
+.nav_item {
+	text-transform: capitalize;
+	color: gray;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-bottom: 3px solid transparent;
+}
+
+.nav_item_active {
+	color: black;
+	border-color: black;
+}
+
+.page {
+	font-size: 24px;
+	padding: 20px;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* body { */
+/*   color: rgb(var(--foreground-rgb)); */
+/*   background: linear-gradient( */
+/*       to bottom, */
+/*       transparent, */
+/*       rgb(var(--background-end-rgb)) */
+/*     ) */
+/*     rgb(var(--background-start-rgb)); */
+/* } */
+
+.row {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: end;
+}
+.dav {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right : -0.25em;
+}
+
+.block {
+  padding: 5px 1%;
+}
+input, select{
+  display: block;
+}
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
