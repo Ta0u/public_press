@@ -2,12 +2,8 @@
 * @type {import('next').NextConfig}
 */
 const nextConfig = {
+  basePath: "/src/app",
   output: "export",
-  images: {
-    loader: "akamai",
-    path: "",
-  },
-  assetPrefix: "./",
 };
 
 export default nextConfig;
